@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Block</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>Using D3 to visually represent price correlation of crypto assets</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div id="scatter">
+          <!-- We append our chart here. -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div class="article">
+          <h2>Price correlation of ETH against Bitcoin 9-4-2021 to 11-5-2021</h2>
+          <p>   Initial thoughts: "Apart from a few outlier memecoins and some DEFI protocols, top cryptocurrencies are very closely correlated with Bitcoin."  </p>
+
+          <p>    Normally when comparing the correlation between two items, any number between 0.7 to 1.0 indicates a strong positive
+            correlation; in other words, between those two numbers, it’s a really strong likelihood that you have a powerful 
+            relationship between the two.. The correlation comparisons I ran between Bitcoin(BTC), Ethereum(ETH), SHIBA(SHIB), Chainlink(LINK),
+            and Dogecoin(DOGE) showed very strong correlations with BTC prices between 9/4/2021 and 11-5-2021. BTC and ETH corr was 0.9 from this
+            selected time period, BTC and LINK was 0.54, BTC/SHIB at 0.8, BTC/DOGE at 0.55, and AAVE/BTC at 0.05, respectively.</p>
+          
+          <p>   We can see there are some strong and some weak relationships here. It looks like some coins are tidally locked to BTC and that some maybe decoupled completely.
+            A deeper dive on DEFI coins and their correlations to BTC and ETC could yield some insight on whats orbiting what, and how strong is the gravity of each object. 
+            I am actually surprized to see any weak correlations with BTC at all. 
+          </p>
+
+          <p>    Bitcoin dominance is calculated as: Total Market Cap/BTC Market Capitalization = BTC Dominance. But... Bitcoin's 
+            dominance really digs deeper into the cryptoverse, any leveraged crypto trader can attest to this. BTC moves cause price movement
+              across most crypto markets. Looking into these correlations might give a trader concerned with risk management some edge in balancing risk exposure.</p>
+
+
+          <p>  Mapping these correlations could lead to a trading strategy where one opens a long position on a BTC move up and based on some scale of how correleated BTC 
+            and other coins are, open a short on another coin that does poorly on a BTC up move, then flip bias at BTC top and short BTC but long the negatively correlated
+             asset to hedge??
+          </p>
+          <p>             Concluding Thoughts: "Not everything was as i expected and BTC maybe losing its influence over certain crypto assets, at least in these market conditions"
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>Crypto Markets Correlation to Bitcoin</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
