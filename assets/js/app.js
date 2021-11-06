@@ -181,33 +181,33 @@ function makeResponsive() {
           .attr("y", 20)
           .attr("value", "ethopen") // value to grab for event listener
           .classed("active", true)
-          .text("ETH PRICE @ DAILY OPEN");
+          .text("ETH PRICE @ MINUTE OPEN");
 
       var linkLabel = labelsGroup.append("text")
           .attr("x", 0)
           .attr("y", 40)
           .attr("value", "linkopen") // value to grab for event listener
           .classed("inactive", true)
-          .text("LINK PRICE @ DAILY OPEN");
+          .text("LINK PRICE @ MINUTE OPEN");
 
       var shibPriceLabel = labelsGroup.append("text")
           .attr("x", 0)
           .attr("y", 60)
           .attr("value", "shibopen") // value to grab for event listener
           .classed("inactive", true)
-          .text("SHIB PRICE @ DAILY OPEN");
+          .text("SHIB PRICE @ MINUTE OPEN");
       var dogePriceLabel = labelsGroup.append("text")
           .attr("x", 0)
           .attr("y", 80)
           .attr("value", "dogeopen") // value to grab for event listener
           .classed("inactive", true)
-          .text("DOGE PRICE @ DAILY OPEN");
+          .text("DOGE PRICE @ MINUTE OPEN");
       var aavePriceLabel = labelsGroup.append("text")
           .attr("x", 0)
           .attr("y", 100)
           .attr("value", "aaveopen") // value to grab for event listener
           .classed("inactive", true)
-          .text("AAVE PRICE @ DAILY OPEN");
+          .text("AAVE PRICE @ MINUTE OPEN");
 
 
       // append y axis
@@ -218,7 +218,7 @@ function makeResponsive() {
           .attr("dy", "1em")
           .style('stroke', '#005')
           .classed("axis-text", true)
-          .text("BTC PRICE @ DAILY OPEN");
+          .text("BTC PRICE @ MINUTE OPEN");
 
       // updateToolTip function above csv import
       var circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
