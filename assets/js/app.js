@@ -84,7 +84,7 @@ function makeResponsive() {
       if (chosenXAxis === "ethopen") {
           label = "ETH/BTC";
           asset = "ETH";
-      } else if (chosenXAxis === "open") {
+      } else if (chosenXAxis === "shibopen") {
           label = "SHIB/BTC";
           asset = "SHIB";
       } else if (chosenXAxis === "dogeopen") {
