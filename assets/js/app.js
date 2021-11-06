@@ -1,3 +1,4 @@
+
 function makeResponsive() {
 
   // if the SVG area isn't empty when the browser loads, remove it
@@ -100,7 +101,7 @@ function makeResponsive() {
           .attr("class", "tooltip")
           .offset([80, -60])
           .html(function(d) {
-              return (`<h3>${label}<h3>BTC: ${d.btcopen.toFixed(2)}<h3>${asset}: ${d[chosenXAxis]}<h3>Date: ${d.Date}`)
+              return (`<h3>${label}<h3>BTC: ${d.btcopen.toFixed(2)}<h3>${asset}: ${d[chosenXAxis]}<h3>Time: ${d.time}`)
           })
 
 
